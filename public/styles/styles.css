@@ -1,0 +1,267 @@
+body, html {
+    background-color: black;
+    color: white;
+	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+	font-family: "Inconsolata";
+	font-style: normal;
+	margin:0;
+    padding:0;
+}
+
+.container {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.row {
+	flex-direction: row;
+}
+
+img {
+	max-width: 60%;
+	height: auto;
+}
+
+/**Navbar**/
+#nav {
+	left: 0%;
+	right: 0%;
+	background-color: #000000;
+	font-family: "Roboto Condensed";
+	position: fixed;
+	display: block;
+	top: -100px;
+	transition: top 0.4s;
+    box-shadow: 2px 2px 5px #ffffff;
+	z-index: 2;
+}
+
+.nav-img {
+	float: left;
+	width: 5%;
+	height: auto;
+	border: 2px solid white;
+	border-radius: 100%;
+}
+
+.nav-item:first-child {
+	float: left;
+	font-weight: 500;
+}
+
+.nav-item {
+	color: white;
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 22px;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 500;
+}
+
+.nav-item:hover {
+	color: #b27be5;
+	transition: 0.5s;
+}
+
+.nav-item:hover:after {
+    transform: scaleX(1);
+}
+
+.nav-item::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #b27be5;
+    transform: scaleX(0);  
+    transition: 350ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+/**Home**/
+#home-page {
+	height:100vh;
+	background-position: center center;
+	flex-wrap: wrap;
+	background-size:cover;
+    /*background-image: url("/assets/img/home_img.JPG");*/
+}
+
+.page-header {
+	max-width: 100%;
+	font-size: 350%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+.main-content {
+	letter-spacing: 2px;
+	max-width: 100%;
+	font-size: 175%;
+}
+
+.home-page--text {
+	margin-left: 10px;
+	padding: 0px;
+	font-family: "Inconsolata";
+	color: white;
+}
+
+/**About**/
+#about-page {
+	padding:50px;
+	padding-bottom: 80px;
+	min-height:90vh;
+}
+
+.flex--container {
+	display: flex;
+}
+
+.flex--child {
+	flex: 1;
+	margin: auto;
+}
+
+.img-stack {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	position: relative;
+	width: 100%;
+	margin-top: 60px;
+}
+
+.img-stack--top {
+	grid-column: 2 / span 7;
+	grid-row: 1;
+	padding-top: 20%;
+	z-index: 1; 
+}
+
+.img-stack--bottom {
+	grid-column: 5 / -1;
+	grid-row: 1;
+}
+
+button {
+	color:white;
+  	display: block;
+	width: 100%;
+	height: auto;
+  	padding: 10px 30px;
+	background: transparent;
+	font: 250% "Roboto Condensed";
+  	border: 3px solid white;
+	border-radius: 2%;
+  	cursor: pointer;
+}
+
+button:hover {
+	color: black;
+	background: white;
+	transition: 0.5s;
+}
+
+.button--span {
+	display: flex;
+	margin-top: 60px;
+}
+
+.button--span > a {
+	color: transparent
+}
+
+.button--span > a {
+	margin:auto;
+}
+
+.button--span > img {
+	width: 15%;
+	height: 15%;
+	border-radius: 100%;
+	margin: auto;
+}
+
+/**Projects**/
+#projects-page {
+	padding:50px;
+	padding-bottom: 80px;
+	min-height:90vh;
+}
+
+/**Education**/
+#text .page-header {
+	margin-bottom:40px;
+}
+
+#education-page {
+	padding:50px;
+	padding-bottom: 80px;
+	min-height:90vh;
+}
+
+#school-info h2 {
+	margin: 0 15px 0 15px;
+}
+
+#school-info h3 {
+	margin: 0;
+}
+
+#education-title img {
+	width: 6%;
+}
+
+#coursework p {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+li {
+	margin: 3px;
+    font-size: 15px;
+}
+
+ul {
+    height:30px;
+    display: inline-block;
+    zoom:1;
+	list-style-type: none;
+}
+
+
+/**Footer**/
+#footer {
+	height: 6em;
+	text-align: center;
+	background-color: white;
+	color: black;
+}
+
+#social-container * {
+	padding: 6px;
+	margin-bottom: 6px;
+}
+
+#social-container a {
+	color: black;
+	transition: .4s;
+}
+
+#social-container a:hover {
+	color: #b27be5;
+}
+
+#copyright {
+	font-size:14px;
+}
