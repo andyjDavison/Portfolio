@@ -30,7 +30,7 @@ function Navbar() {
             <a href="#education-page" className="nav-item">EDUCATION</a>
             <a href="#projects-page" className="nav-item">PROJECTS</a>
             <a href="#about-page" className="nav-item">ABOUT</a>
-            <img src="./Portfolio/assets/img_1.jpg" alt="" className="nav-img"/>
+            <img src="/assets/img_1.jpg" alt="" className="nav-img"/>
         </nav>
     )
 }
