@@ -26,10 +26,10 @@ body, html {
 	flex-direction: row;
 }
 
-img {
+/* img {
 	max-width: 60%;
 	height: auto;
-}
+} */
 
 /**Navbar**/
 #nav {
@@ -37,6 +37,7 @@ img {
 	right: 0%;
 	background-color: #000000;
 	font-family: "Roboto Condensed";
+	text-align: center;
 	position: fixed;
 	display: block;
 	top: -100px;
@@ -49,6 +50,7 @@ img {
 	float: left;
 	width: 5%;
 	height: auto;
+	vertical-align: middle;
 	border: 2px solid white;
 	border-radius: 100%;
 }
@@ -62,7 +64,6 @@ img {
 	color: white;
 	float: right;
 	display: block;
-	text-align: center;
 	padding: 22px;
 	text-decoration: none;
 	font-size: 1.3vw;
@@ -141,6 +142,11 @@ img {
 	margin-top: 60px;
 }
 
+.about--img {
+	max-width: 60%;
+	height: auto;
+}
+
 .img-stack--top {
 	grid-column: 2 / span 7;
 	grid-row: 1;
@@ -153,7 +159,7 @@ img {
 	grid-row: 1;
 }
 
-button {
+.button--span a > button{
 	color:white;
   	display: block;
 	width: 100%;
@@ -166,7 +172,7 @@ button {
   	cursor: pointer;
 }
 
-button:hover {
+.button--span a > button:hover {
 	color: black;
 	background: white;
 	transition: 0.5s;
@@ -178,11 +184,8 @@ button:hover {
 }
 
 .button--span > a {
-	color: transparent
-}
-
-.button--span > a {
-	margin:auto;
+	color: transparent;
+	margin: auto;
 }
 
 .button--span > img {
@@ -194,9 +197,74 @@ button:hover {
 
 /**Projects**/
 #projects-page {
-	padding:50px;
+	padding: 50px 0px;
 	padding-bottom: 80px;
 	min-height:90vh;
+}
+
+.project--item {
+	position: relative;
+	height: 300px;
+	width: 300px;
+	margin: 3%;
+}
+
+.project--item-img {
+	width: 300px;
+	height: auto;
+	background-color: white;
+	border-radius: 6px;
+}
+
+.project--item-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 6px;
+	background: #F8F8F8;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity .4s, visibility .4s;
+}
+
+.project--item:hover .project--item-container {
+	visibility: visible;
+	opacity: 0.9;
+}
+
+.project--item-container:hover {
+	opacity: 1;
+}
+
+.project--item-info {
+	transition: .5s;
+	color: black;
+	text-align: center;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.project--item-info i, .project--item-info {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	font-weight: 100;
+	line-height: 24px;
+}
+
+.project--item-info a > button {
+	background-color: black;
+	color: white;
+	padding: 5px 15px;
+	border: black;
+	border-radius: 6px;
+	cursor: pointer;
 }
 
 /**Education**/

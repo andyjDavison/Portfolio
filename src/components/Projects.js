@@ -7,6 +7,7 @@ function Projects() {
     return(
         <section className="container column" id="projects-page">
             <h1 className="page-header">PROJECTS</h1>
+            <div className="container row" id="projects-container">
             {
                 projectData.map(project => (
                     <ProjectItem
@@ -17,6 +18,7 @@ function Projects() {
                     />
                 ))
             }
+            </div>
         </section>
     )
 }
