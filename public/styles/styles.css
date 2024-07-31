@@ -105,7 +105,6 @@ body, html {
 	background-position: center center;
 	flex-wrap: wrap;
 	background-size:cover;
-    /*background-image: url("/assets/img/home_img.JPG");*/
 }
 
 .home-page--text {
@@ -131,6 +130,10 @@ body, html {
 	margin: auto;
 }
 
+#about--right {
+	display: flexbox;
+}
+
 .img-stack {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -142,16 +145,17 @@ body, html {
 .about--img {
 	max-width: 60%;
 	height: auto;
+	border-radius: 10px;
 }
 
-.img-stack--top {
+#img--stack-top {
 	grid-column: 2 / span 7;
 	grid-row: 1;
 	padding-top: 20%;
 	z-index: 1; 
 }
 
-.img-stack--bottom {
+#img--stack-bottom {
 	grid-column: 5 / -1;
 	grid-row: 1;
 }

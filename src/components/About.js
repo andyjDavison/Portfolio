@@ -6,14 +6,14 @@ function About() {
             <h1 className="page-header">HELLO WORLD!</h1>
             <div className="flex--container row">
                 <div className="img-stack flex-child">
-                    <div className="img-stack--item img-stack--bottom">
+                    <div className="img-stack--item" id="img--stack-bottom">
                        <img src="/assets/img_2.JPG" alt="" className="about--img"/>
                     </div>
-                    <div className="img-stack--item img-stack--top">
+                    <div className="img-stack--item" id="img--stack-top">
                         <img src="/assets/img_3.jpg" alt="" className="about--img"/>
                     </div>
                 </div>
-                <div className="about--button flex-child">
+                <div className="about--button flex-child" id="about--right">
                     <div className="button--span">
                         <img src="/assets/github_icon.png" alt=""/>
                         <a href="https://www.github.com/andyjDavison" target="_blank" rel="noreferrer">
