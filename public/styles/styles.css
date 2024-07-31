@@ -26,60 +26,62 @@ body, html {
 	flex-direction: row;
 }
 
-/* img {
-	max-width: 60%;
-	height: auto;
-} */
-
 /**Navbar**/
 #nav {
 	left: 0%;
 	right: 0%;
 	background-color: #000000;
 	font-family: "Roboto Condensed";
-	text-align: center;
 	position: fixed;
-	display: block;
+	display: flex;
 	top: -100px;
 	transition: top 0.4s;
     box-shadow: 2px 2px 5px #ffffff;
 	z-index: 2;
 }
 
-.nav-img {
-	float: left;
+#nav--left {
+	flex: 1;
+	display: flex;
+}
+
+#nav--right {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#nav--img {
 	width: 5%;
 	height: auto;
-	vertical-align: middle;
+	margin: auto 0;
 	border: 2px solid white;
 	border-radius: 100%;
 }
 
-.nav-item:first-child {
+.nav--item {
+	color: white;
+	padding: 35px 22px;
+	text-decoration: none;
+	font-size: 1.25vw;
+	font-weight: 500;
+}
+
+.nav--item:first-child {
 	float: left;
 	font-weight: 500;
 }
 
-.nav-item {
-	color: white;
-	float: right;
-	display: block;
-	padding: 22px;
-	text-decoration: none;
-	font-size: 1.3vw;
-	font-weight: 500;
-}
-
-.nav-item:hover {
+.nav--item:hover {
 	color: #b27be5;
 	transition: 0.5s;
 }
 
-.nav-item:hover:after {
+.nav--item:hover:after {
     transform: scaleX(1);
 }
 
-.nav-item::after {
+.nav--item::after {
     display:block;
     content: '';
     border-bottom: solid 3px #b27be5;
