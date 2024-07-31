@@ -269,10 +269,6 @@ body, html {
 }
 
 /**Education**/
-#text .page-header {
-	margin-bottom:40px;
-}
-
 #education-page {
 	padding:50px;
 	padding-bottom: 80px;
@@ -281,24 +277,31 @@ body, html {
 
 #school-info h2 {
 	margin: 0 15px 0 15px;
+	font-family: serif;
 }
 
 #school-info h3 {
 	margin: 0;
+	font-family: serif;
 }
 
 #education-title img {
 	width: 6%;
 }
 
+#coursework {
+	display: flex;
+	justify-content: center;
+}
+
+#coursework div {
+	flex: 0 0 25%;
+}
+
 #coursework p {
 	font-weight: bold;
 	text-decoration: underline;
-}
-
-li {
-	margin: 3px;
-    font-size: 15px;
+	text-align: center;
 }
 
 ul {
@@ -308,6 +311,10 @@ ul {
 	list-style-type: none;
 }
 
+li {
+	margin: 10px;
+    font-size: 15px;
+}
 
 /**Footer**/
 #footer {
