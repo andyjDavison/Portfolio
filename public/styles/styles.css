@@ -31,7 +31,7 @@ body, html {
 	font-size: 350%;
 	margin-top: 5%;
 	margin-bottom: 2%;
-	font-family: "Bebas Neue", sans-serif;
+	font-family: "Roboto Condensed",'Gill Sans';
 	text-align: center;
 }
 
@@ -121,6 +121,10 @@ body, html {
 	min-height:90vh;
 }
 
+#about-page p {
+	text-align: center;
+}
+
 .flex--container {
 	display: flex;
 }
@@ -138,7 +142,7 @@ body, html {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	position: relative;
-	width: 100%;
+	width: 60%;
 	margin-top: 60px;
 }
 
@@ -162,7 +166,8 @@ body, html {
 
 .button--span a > button{
 	color:white;
-  	display: block;
+  	display: flex;
+	justify-content: center;
 	width: 100%;
 	height: auto;
   	padding: 10px 30px;
@@ -181,6 +186,7 @@ body, html {
 
 .button--span {
 	display: flex;
+	width: 90%;
 	margin-top: 60px;
 }
 
@@ -189,11 +195,11 @@ body, html {
 	margin: auto;
 }
 
-.button--span > img {
+.button-img {
 	width: 15%;
 	height: 15%;
 	border-radius: 100%;
-	margin: auto;
+	margin: auto 0;
 }
 
 /**Projects**/
@@ -252,10 +258,10 @@ body, html {
 	padding-right: 25px;
 }
 
-.project--item-info i, .project--item-info {
-	font-family: 'Lato', sans-serif;
+.project--item-info p h2 {
+	font-family: 'Inconsolata', sans-serif;
 	text-decoration: none;
-	font-weight: 100;
+	font-weight: bold;
 	line-height: 24px;
 }
 
