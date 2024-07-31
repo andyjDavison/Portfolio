@@ -26,6 +26,15 @@ body, html {
 	flex-direction: row;
 }
 
+.page-header {
+	max-width: 100%;
+	font-size: 350%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	font-family: "Bebas Neue", sans-serif;
+	text-align: center;
+}
+
 /**Navbar**/
 #nav {
 	left: 0%;
@@ -91,26 +100,12 @@ body, html {
 }
 
 /**Home**/
-#home-page {
+#home--page {
 	height:100vh;
 	background-position: center center;
 	flex-wrap: wrap;
 	background-size:cover;
     /*background-image: url("/assets/img/home_img.JPG");*/
-}
-
-.page-header {
-	max-width: 100%;
-	font-size: 350%;
-	margin-top: 5%;
-	margin-bottom: 2%;
-	text-align: center;
-}
-
-.main-content {
-	letter-spacing: 2px;
-	max-width: 100%;
-	font-size: 175%;
 }
 
 .home-page--text {
