@@ -127,6 +127,7 @@ body, html {
 
 .flex--container {
 	display: flex;
+	justify-content: center;
 }
 
 .flex--child {
@@ -142,7 +143,7 @@ body, html {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	position: relative;
-	width: 60%;
+	width: 50%;
 	margin-top: 60px;
 }
 
@@ -162,6 +163,10 @@ body, html {
 #img--stack-bottom {
 	grid-column: 5 / -1;
 	grid-row: 1;
+}
+
+.about--button {
+	height: auto;
 }
 
 .button--span a > button{
