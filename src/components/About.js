@@ -32,7 +32,7 @@ function About() {
                         </a>
                     </div>
                     <div className="button--span">
-                        <a href="/assets/ADResume.pdf" target="_blank" rel="noreferrer">
+                        <a href="/assets/AndrewDavisonResume.pdf" target="_blank" rel="noreferrer">
                             <button>
                                 <img src="/assets/pdf_icon.jpg" alt="" className="button-img"/>
                                 Resume
