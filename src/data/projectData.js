@@ -36,6 +36,12 @@ const projectData = [
         link: "https://github.com/andyjDavison/PicoCTF"
     },
     {
+        imgSource: "/assets/neovim.png",
+        header: "NeoVim",
+        desc: "A fully functional NeoVim IDE, that I configured with Lua",
+        link: "https://github.com/andyjDavison/NeoVim"
+    },
+    {
         imgSource: "/assets/website.jpg",
         header: "Portfolio Website",
         desc: "My personal website written entirely in HTML, CSS, and React JS.",
