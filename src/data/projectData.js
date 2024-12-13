@@ -1,5 +1,17 @@
 const projectData = [
     {
+        imgSource:"/assets/beacon_icon.webp",
+        header:"BEACON of Hope",
+        desc:"An AI based meal reccomendation webapp, hosted on AWS Cloud",
+        link:"https://github.com/SCCapstone/beacon-of-hope"
+    },
+    {
+        imgSource:"/assets/movie_icon.png",
+        header:"Movie Review App",
+        desc:"A fullstack movie review webapp, written in C# using the .NET Framework, along with React",
+        link:"https://github.com/Sambit096/Movie-Review-App"
+    },
+    {
         imgSource:"/assets/two_way.png",
         header: "Two Way Client-Server",
         desc: "A Java program that allows communication between ports from two devices.",
