@@ -12,6 +12,30 @@ const projectData = [
         link:"https://github.com/Sambit096/Movie-Review-App"
     },
     {
+        imgSource: "/assets/website.jpg",
+        header: "Portfolio Website",
+        desc: "My personal website written entirely in HTML, CSS, and React JS.",
+        link: "https://github.com/andyjDavison/Portfolio"
+    },
+    {
+        imgSource: "/assets/leetcode.png",
+        header: "LeetCode",
+        desc: "Solutions and writeups to LeetCode problems that I have solved.",
+        link: "https://github.com/andyjDavison/Leetcode"
+    },
+    {
+        imgSource: "/assets/picoctf.png",
+        header: "PicoCTF",
+        desc: "Writeups for various Capture the Flag problems from PicoCTF.",
+        link: "https://github.com/andyjDavison/PicoCTF"
+    },
+    {
+        imgSource: "/assets/neovim.png",
+        header: "NeoVim",
+        desc: "A fully functional NeoVim IDE, that I configured with Lua",
+        link: "https://github.com/andyjDavison/NeoVim"
+    },
+    {
         imgSource:"/assets/two_way.png",
         header: "Two Way Client-Server",
         desc: "A Java program that allows communication between ports from two devices.",
@@ -34,30 +58,6 @@ const projectData = [
         header: "Design Patterns",
         desc: "Software Engineering design patterns implemented in Java.",
         link: "https://github.com/andyjDavison/CSCE-247"
-    },
-    {
-        imgSource: "/assets/leetcode.png",
-        header: "LeetCode",
-        desc: "Solutions and writeups to LeetCode problems that I have solved.",
-        link: "https://github.com/andyjDavison/Leetcode"
-    },
-    {
-        imgSource: "/assets/picoctf.png",
-        header: "PicoCTF",
-        desc: "Writeups for various Capture the Flag problems from PicoCTF.",
-        link: "https://github.com/andyjDavison/PicoCTF"
-    },
-    {
-        imgSource: "/assets/neovim.png",
-        header: "NeoVim",
-        desc: "A fully functional NeoVim IDE, that I configured with Lua",
-        link: "https://github.com/andyjDavison/NeoVim"
-    },
-    {
-        imgSource: "/assets/website.jpg",
-        header: "Portfolio Website",
-        desc: "My personal website written entirely in HTML, CSS, and React JS.",
-        link: "https://github.com/andyjDavison/Portfolio"
     }
 ]
 
