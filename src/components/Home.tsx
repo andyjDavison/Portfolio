@@ -8,6 +8,7 @@ export function Home() {
   return (
     <section>
       <div>
+        <p className="text-yellow-500">test</p>
         {/* <Typewriter className="home-page--text" onInit={(typewriter) => {
                typewriter.pasteString('<p>Andrew Davison\'s Website [Version 10.0.19045.4529]<br>(c) Andrew Davison. All rights reserved.<br><p>')
                .pasteString("C:\\Users\\andyD\\Portfolio> ")

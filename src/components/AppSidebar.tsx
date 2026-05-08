@@ -9,8 +9,9 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "./ui/sidebar";
-import avatar from "../../public/assets/img_1.jpg";
-import { GraduationCap, InfoIcon, LayoutDashboard } from "lucide-react";
+import avatar from "../assets/img_1.jpg";
+import { GraduationCap, Home, InfoIcon, LayoutDashboard } from "lucide-react";
+import { Link } from "react-router";
 
 export function AppSidebar() {
   return (
@@ -29,26 +30,35 @@ export function AppSidebar() {
           <SidebarMenu>
             <SidebarMenuItem>
               <SidebarMenuButton asChild>
-                <a href="#">
+                <Link to="/">
+                  <Home />
+                  <span>Home</span>
+                </Link>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+            <SidebarMenuItem></SidebarMenuItem>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <Link to="/about">
                   <InfoIcon />
                   <span>About</span>
-                </a>
+                </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
             <SidebarMenuItem>
               <SidebarMenuButton asChild>
-                <a href="#">
+                <Link to="/education">
                   <GraduationCap />
                   <span>Education</span>
-                </a>
+                </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
             <SidebarMenuItem>
               <SidebarMenuButton asChild>
-                <a href="#">
+                <Link to="/projects">
                   <LayoutDashboard />
                   <span>Projects</span>
-                </a>
+                </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
           </SidebarMenu>
