@@ -1,15 +1,14 @@
-import React from "react";
-import Typewriter from "typewriter-effect"
+// import Typewriter from "typewriter-effect"
 
 const styles = {
-   backgroundImage: "url('/assets/black.jpg')"
+  backgroundImage: "url('/assets/black.jpg')",
 };
 
-function Home() {
-   return(
-      <section id="home--page" style={styles}>
-         <div className="home-page--text">
-            <Typewriter className="home-page--text" onInit={(typewriter) => {
+export function Home() {
+  return (
+    <section>
+      <div>
+        {/* <Typewriter className="home-page--text" onInit={(typewriter) => {
                typewriter.pasteString('<p>Andrew Davison\'s Website [Version 10.0.19045.4529]<br>(c) Andrew Davison. All rights reserved.<br><p>')
                .pasteString("C:\\Users\\andyD\\Portfolio> ")
                .pauseFor(5000)
@@ -26,10 +25,8 @@ function Home() {
                loop: true,
                cursor: '_',
                deleteSpeed: 1
-            }}/>
-         </div>
-      </section>
-   )
+            }}/> */}
+      </div>
+    </section>
+  );
 }
-
-export default Home;
