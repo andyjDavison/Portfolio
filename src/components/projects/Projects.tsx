@@ -147,7 +147,7 @@ export function Projects() {
           </Carousel>
         </div>
 
-        <div className="grid grid-cols-1 gap-24 gap-y-12 md:gap-y-16 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-24 gap-y-12 md:gap-y-16 lg:grid-cols-5 -mt-10">
           <Carousel
             className="relative w-full max-lg:order-2 lg:col-span-3"
             setApi={setThumbApi}
