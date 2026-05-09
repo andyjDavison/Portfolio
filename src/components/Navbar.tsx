@@ -15,54 +15,60 @@ import { Avatar, AvatarImage } from "./ui/avatar";
 import avatar from "../assets/img_1.jpg";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
 import { ProjectsDropdown } from "./Projects-Dropdown";
+import { AboutDropdown } from "./about/AboutDropdown";
 
 export function Navbar() {
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
-      <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
-          <NavigationMenuItem className="font-bold flex">
-            <Link to="/" className="ml-2 font-bold text-xl flex">
-              <SwordIcon />
-              Andrew Davison
-            </Link>
-          </NavigationMenuItem>
-          <nav className="hidden md:flex gap-2">
-            <Link to="/work">
-              <Button variant="ghost" className="text-md">
-                <LayoutDashboard />
-                Work
-              </Button>
-            </Link>
-            <Link to="/projects">
-              <HoverCard openDelay={10} closeDelay={100}>
-                <HoverCardTrigger asChild>
-                  <Button variant="ghost" className="text-md">
-                    <LayoutDashboard />
-                    Projects
-                    <ChevronDown />
-                  </Button>
-                </HoverCardTrigger>
-                <HoverCardContent className="flex w-64 flex-col gap-0.5">
-                  <ProjectsDropdown />
-                </HoverCardContent>
-              </HoverCard>
-            </Link>
-            <Link to="/education">
-              <Button variant="ghost" className="text-md">
-                <GraduationCapIcon />
-                Education
-              </Button>
-            </Link>
-          </nav>
+    <NavigationMenu className="sticky top-0 z-40 bg-white mx-auto border rounded-3xl">
+      <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuItem className="font-bold flex">
+          <Link to="/" className="ml-2 font-bold text-xl flex">
+            <SwordIcon />
+            Andrew Davison
+          </Link>
+        </NavigationMenuItem>
+        <nav className="hidden md:flex gap-2">
+          <Link to="/work">
+            <Button variant="ghost" className="text-md">
+              <LayoutDashboard />
+              Work
+            </Button>
+          </Link>
+          <Link to="/projects">
+            <HoverCard openDelay={10} closeDelay={100}>
+              <HoverCardTrigger asChild>
+                <Button variant="ghost" className="text-md">
+                  <LayoutDashboard />
+                  Projects
+                  <ChevronDown />
+                </Button>
+              </HoverCardTrigger>
+              <HoverCardContent className="flex w-64 flex-col gap-0.5">
+                <ProjectsDropdown />
+              </HoverCardContent>
+            </HoverCard>
+          </Link>
+          <Link to="/education">
+            <Button variant="ghost" className="text-md">
+              <GraduationCapIcon />
+              Education
+            </Button>
+          </Link>
+        </nav>
 
-          <div className="hidden md:flex gap-2">
-            <Avatar size="lg">
-              <AvatarImage src={avatar} />
-            </Avatar>
-          </div>
-        </NavigationMenuList>
-      </NavigationMenu>
-    </header>
+        <div className="hidden md:flex gap-2">
+          <HoverCard openDelay={10} closeDelay={100}>
+            <HoverCardTrigger asChild>
+              <Avatar size="lg" className="hover:cursor-pointer">
+                <AvatarImage src={avatar} />
+              </Avatar>
+            </HoverCardTrigger>
+            <HoverCardContent className="flex w-50 flex-col gap-0.5">
+              <AboutDropdown />
+            </HoverCardContent>
+          </HoverCard>
+        </div>
+      </NavigationMenuList>
+    </NavigationMenu>
   );
 }
