@@ -1,49 +1,52 @@
+import { Button } from "../ui/button";
+import { ClassesCarousel1 } from "./ClassesCarousel1";
+import { ClassesCarouel2 } from "./ClassesCarousel2";
+import { ClassesCarouel3 } from "./ClassesCarousel3";
+import { Gallery } from "./Gallery";
+
+export const colors = {
+  red: "bg-rose-300/50 border-rose-950",
+  white: "bg-white/50 border-stone-300",
+  black: "bg-zinc-900/50 border-zinc-950",
+};
+
 export function Education() {
   return (
-    <section className="container column" id="education-page">
-      <h1 className="page-header">EDUCATION</h1>
-      <div className="container row" id="education-title">
-        <img src="/assets/university_img.png" alt="" />
-        <div className="container column" id="school-info">
-          <h2>University of South Carolina</h2>
-          <h3>B.S.C.S. of Computer Science</h3>
+    <section className="flex-1 h-full">
+      <div className="mx-auto flex h-full max-w-7xl flex-col gap-6 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-row h-120 items-center gap-2 gap-y-12">
+          <div className="flex w-full flex-col justify-center align-middle gap-5 max-lg:items-center lg:col-span-3 h-full">
+            <div className="flex gap-2 items-center">
+              <h1 className="z-10 text-4xl leading-[1.29167] font-semibold text-balance max-lg:text-center sm:text-4xl lg:text-5xl">
+                Education
+              </h1>
+              <img src="assets/university_img.png" className="size-10" />
+            </div>
+
+            <p className="text-muted-foreground max-w-xl text-xl max-lg:text-center">
+              I studied Computer Science at the University of South Carolina
+              from 2021 to 2025. Along with some of the classes I took heres
+              some pictures of me there!
+            </p>
+
+            <div className="flex items-center gap-4">
+              <Button
+                asChild
+                size="lg"
+                className="group relative w-fit overflow-hidden rounded-full text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-[position:-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]"
+              >
+                <a href="https://sc.edu">Univeristy of South Carolina</a>
+              </Button>
+            </div>
+          </div>
+          <Gallery />
         </div>
-      </div>
-      <div className="container row" style={{ width: "100%" }}>
-        <div id="coursework" style={{ width: "100%" }}>
-          <div>
-            <p>Computer Science</p>
-            <ul>
-              <li>Algorithmic Design I(CSCE 145)</li>
-              <li>Algorithmic Design II(CSCE 146)</li>
-              <li>Computing in the Modern World(CSCE 190)</li>
-              <li>UNIX/Linux Fundamentals(CSCE 215)</li>
-              <li>Digital Logic Design(CSCE 211)</li>
-              <li>Advanced Programming Techniques(CSCE 240)</li>
-              <li>Intro. to Computer Architecture(CSCE 212)</li>
-              <li>Software Engineering(CSCE 247)</li>
-              <li>Operating Systems(CSCE 311)</li>
-              <li>Programming Language Structures(CSCE 330)</li>
-              <li>Data Structures & Algorithms(CSCE 350)</li>
-              <li>Introduction to Computer Networks(CSCE 416)</li>
-              <li>Foundations of Computation(CSCE 355)</li>
-            </ul>
-          </div>
-          <div>
-            <p>Math</p>
-            <ul>
-              <li>Calculus I(MATH 141)</li>
-              <li>Calculus II(MATH 142)</li>
-              <li>Discrete Structures(MATH 374)</li>
-              <li>Vector Calculus(MATH 241)</li>
-              <li>Applied linear Algebra(MATH 344)</li>
-              <li>Statistics for Engineers(STAT 509)</li>
-            </ul>
-          </div>
+        <div className="flex flex-col gap-2 w-full">
+          <ClassesCarousel1 />
+          <ClassesCarouel2 />
+          <ClassesCarouel3 />
         </div>
       </div>
     </section>
   );
 }
-
-export default Education;

@@ -4,7 +4,7 @@ const projectData = [
     header: "Portfolio Website",
     desc: "My personal website written entirely with Typescript and React/Vite.",
     github: "https://github.com/andyjDavison/Portfolio",
-    link: "projects/portfolio",
+    link: "portfolio",
     socialImgSource: "assets/Portfolio.webp",
   },
   {
@@ -12,7 +12,7 @@ const projectData = [
     header: "BEACON of Hope",
     desc: "An AI based meal reccomendation webapp, hosted on AWS Cloud",
     github: "https://github.com/SCCapstone/beacon-of-hope",
-    link: "projects/beacon-of-hope",
+    link: "beacon-of-hope",
     socialImgSource: "assets/beacon-of-hope.webp",
   },
   {
@@ -20,7 +20,7 @@ const projectData = [
     header: "LeetCode",
     desc: "Solutions and writeups to LeetCode problems that I have solved.",
     github: "https://github.com/andyjDavison/Leetcode",
-    link: "projects/leetcode",
+    link: "leetcode",
     socialImgSource: "assets/Leetcode.webp",
   },
   {
@@ -28,7 +28,7 @@ const projectData = [
     header: "NeoVim",
     desc: "A fully functional NeoVim IDE configured and written in Lua",
     github: "https://github.com/andyjDavison/NeoVim",
-    link: "projects/neovim",
+    link: "neovim",
     socialImgSource: "assets/NeoVim.webp",
   },
   {
@@ -36,31 +36,15 @@ const projectData = [
     header: "Movie Review App",
     desc: "A fullstack movie review webapp, written in C# using the .NET Framework, along with React",
     github: "https://github.com/Sambit096/Movie-Review-App",
-    link: "projects/movie-review-app",
+    link: "movie-review-app",
     socialImgSource: "assets/Movie-Review-App.webp",
   },
-  // {
-  //   imgSource: "assets/two_way.png",
-  //   header: "Two Way Client-Server",
-  //   desc: "A Java program that allows communication between ports from two devices.",
-  //   github: "https://github.com/andyjDavison/CSCE-416/tree/main/hw1",
-  //   link: "projects/two-way-server",
-  //   socialImgSource: "",
-  // },
-  // {
-  //   imgSource: "assets/client_server.png",
-  //   header: "Two Way Async Client-Server",
-  //   desc: "A Java program that allows any number of devices to connect to a central server and participate in a group chat.",
-  //   github: "https://github.com/andyjDavison/CSCE-416/tree/main/hw2",
-  //   link: "projects/async-server",
-  //   socialImgSource: "",
-  // },
   {
     imgSource: "assets/design_patterns.jpg",
     header: "Design Patterns",
     desc: "Software Engineering design patterns implemented in Java.",
     github: "https://github.com/andyjDavison/CSCE-247",
-    link: "projects/design-patterns",
+    link: "design-patterns",
     socialImgSource: "assets/CSCE-247.webp",
   },
   {
@@ -68,7 +52,7 @@ const projectData = [
     header: "Data Structures & Algos.",
     desc: "Implementations of 3 algorithms in C++.",
     github: "https://github.com/andyjDavison/CSCE-350/tree/main",
-    link: "projects/dsa",
+    link: "dsa",
     socialImgSource: "assets/CSCE-350.webp",
   },
   {
@@ -76,7 +60,7 @@ const projectData = [
     header: "PicoCTF",
     desc: "Writeups for various Capture the Flag problems from PicoCTF.",
     github: "https://github.com/andyjDavison/PicoCTF",
-    link: "projects/picoctf",
+    link: "picoctf",
     socialImgSource: "assets/PicoCTF.webp",
   },
 ];

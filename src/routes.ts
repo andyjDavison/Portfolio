@@ -3,7 +3,7 @@ import { Home } from "./components/Home";
 import { About } from "./components/about/About";
 import { Projects } from "./components/projects/Projects";
 import { RootLayout } from "./RootLayout";
-import Education from "./components/education/Education";
+import { Education } from "./components/education/Education";
 import { BeaconOfHope } from "./components/projects/BeaconOfHope";
 import { MovieReview } from "./components/projects/MovieReview";
 import { Portfolio } from "./components/projects/Portfolio";
