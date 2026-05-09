@@ -201,26 +201,24 @@ export function Projects() {
           >
             <CarouselContent>
               {projectData.map((item) => (
-                <CarouselItem key={item.desc}>
-                  <Link
-                    to={item.link}
-                    className="flex h-full min-h-14 w-full justify-center gap-4 px-6 lg:items-center"
-                  >
-                    <img
-                      src={item.imgSource}
-                      className="border-background size-10 rounded-full border-4 drop-shadow-lg"
-                    />
-                    <Separator
-                      orientation="vertical"
-                      className="bg-primary hidden !h-10 !w-0.5 !rounded-full sm:block mt-8"
-                    />
-                    <div className="flex flex-col">
-                      <p className="text-card-foreground text-lg font-bold">
-                        {item.header}
-                      </p>
-                      <p className="text-card-foreground">{item.desc}</p>
-                    </div>
-                  </Link>
+                <CarouselItem
+                  key={item.desc}
+                  className="flex h-full min-h-14 w-full justify-center gap-4 px-6 lg:items-center"
+                >
+                  <img
+                    src={item.imgSource}
+                    className="border-background size-10 rounded-full border-4 drop-shadow-lg"
+                  />
+                  <Separator
+                    orientation="vertical"
+                    className="bg-primary hidden !h-10 !w-0.5 !rounded-full sm:block mt-4"
+                  />
+                  <div className="flex flex-col">
+                    <p className="text-card-foreground text-lg font-bold">
+                      {item.header}
+                    </p>
+                    <p className="text-card-foreground">{item.desc}</p>
+                  </div>
                 </CarouselItem>
               ))}
             </CarouselContent>

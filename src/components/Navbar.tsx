@@ -1,4 +1,5 @@
 import {
+  Briefcase,
   ChevronDown,
   GraduationCapIcon,
   LayoutDashboard,
@@ -14,7 +15,6 @@ import { Link } from "react-router";
 import { Avatar, AvatarImage } from "./ui/avatar";
 import avatar from "../assets/img_1.jpg";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
-import { ProjectsDropdown } from "./Projects-Dropdown";
 import { AboutDropdown } from "./about/AboutDropdown";
 
 export function Navbar() {
@@ -30,23 +30,15 @@ export function Navbar() {
         <nav className="hidden md:flex gap-2">
           <Link to="/work">
             <Button variant="ghost" className="text-md">
-              <LayoutDashboard />
+              <Briefcase />
               Work
             </Button>
           </Link>
           <Link to="/projects">
-            <HoverCard openDelay={10} closeDelay={100}>
-              <HoverCardTrigger asChild>
-                <Button variant="ghost" className="text-md">
-                  <LayoutDashboard />
-                  Projects
-                  <ChevronDown />
-                </Button>
-              </HoverCardTrigger>
-              <HoverCardContent className="flex w-64 flex-col gap-0.5">
-                <ProjectsDropdown />
-              </HoverCardContent>
-            </HoverCard>
+            <Button variant="ghost" className="text-md">
+              <LayoutDashboard />
+              Projects
+            </Button>
           </Link>
           <Link to="/education">
             <Button variant="ghost" className="text-md">

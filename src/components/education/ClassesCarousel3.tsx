@@ -48,12 +48,12 @@ export function ClassesCarouel3() {
               className={`flex flex-col ${colors[item.color as keyof typeof colors]} w-150 rounded-4xl border-2 justify-center px-2 py-0.5`}
             >
               <p
-                className={`${item.color === "black" ? "text-white" : ""} text-lg px-5 font-semibold`}
+                className={`${item.color === "black" ? "text-white" : ""} text-sm px-5 font-semibold`}
               >
                 {item.name}
               </p>
               <p
-                className={`${item.color === "black" ? "text-white" : ""} text-md px-5 whitespace-nowrap`}
+                className={`${item.color === "black" ? "text-white" : ""} text-xs px-5 whitespace-nowrap`}
               >
                 {item.desc}
               </p>
