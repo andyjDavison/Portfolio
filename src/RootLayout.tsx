@@ -3,9 +3,9 @@ import { Navbar } from "./components/Navbar";
 
 export function RootLayout() {
   return (
-    <div>
+    <div className="w-screen flex flex-col justify-center">
       <Navbar />
-      <main>
+      <main className="flex justify-center">
         <Outlet />
       </main>
     </div>

@@ -19,7 +19,7 @@ import { AboutDropdown } from "./about/AboutDropdown";
 
 export function Navbar() {
   return (
-    <NavigationMenu className="sticky top-0 z-40 bg-white mx-auto border rounded-3xl">
+    <NavigationMenu className="sticky top-0 z-40 bg-white border rounded-3xl">
       <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
         <NavigationMenuItem className="font-bold flex">
           <Link to="/" className="ml-2 font-bold text-xl flex">

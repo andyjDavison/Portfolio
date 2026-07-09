@@ -12,7 +12,7 @@ const styles = {
 export function Home() {
   return (
     <section className="flex-1 h-full">
-      <div className="mx-auto flex h-full max-w-7xl flex-col gap-6 px-4 sm:px-6 lg:px-8">
+      <div className="flex h-full max-w-7xl flex-col gap-6 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-row h-110 items-center gap-2 gap-y-12">
           <div className="flex w-full flex-col justify-center align-middle gap-5 max-lg:items-center lg:col-span-3 h-full">
             <div className="flex gap-2 items-center">

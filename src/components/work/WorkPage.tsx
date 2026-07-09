@@ -3,9 +3,9 @@ import { Button } from "../ui/button";
 
 export function Work() {
   return (
-    <section className="flex-1">
-      <div className="mx-auto flex h-full max-w-7xl flex-col gap-6 px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-row h-120 items-center gap-2 gap-y-12">
+    <section className="flex-1 flex justify-center">
+      <div className="flex h-full max-w-screen flex-col gap-6">
+        <div className="flex flex-row h-120 items-center gap-2 gap-y-12 mx-20">
           <div className="flex w-full flex-col justify-center align-middle gap-5 max-lg:items-center lg:col-span-3 h-full">
             <h1 className="text-4xl leading-[1.29167] font-semibold text-balance max-lg:text-center sm:text-4xl lg:text-5xl">
               Work
