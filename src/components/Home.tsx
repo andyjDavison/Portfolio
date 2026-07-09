@@ -30,7 +30,7 @@ export function Home() {
         </div>
         <div className="relative flex items-start justify-start -mt-33 gap-6">
           <Link to="/work">
-            <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-85 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-[position:-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]">
+            <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-85 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]">
               <div className="flex flex-col justify-between h-full">
                 <div className="flex flex-row gap-2">
                   <Briefcase className="size-6" />
@@ -43,7 +43,7 @@ export function Home() {
             </Button>
           </Link>
           <Link to="/projects">
-            <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-85 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-[position:-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]">
+            <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-85 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]">
               <div className="flex flex-col justify-between h-full">
                 <div className="flex flex-row gap-2">
                   <LayoutDashboard className="size-6" />
@@ -56,7 +56,7 @@ export function Home() {
             </Button>
           </Link>
           <Link to="/education">
-            <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-85 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-[position:-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]">
+            <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-85 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]">
               <div className="flex flex-col justify-between h-full">
                 <div className="flex flex-row gap-2">
                   <GraduationCapIcon className="size-6" />

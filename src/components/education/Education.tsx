@@ -15,7 +15,7 @@ export function Education() {
   return (
     <section className="flex-1 h-full flex justify-center">
       <div className="flex h-full max-w-screen flex-col gap-6">
-        <div className="flex flex-row h-120 items-center gap-2 gap-y-12 mx-20">
+        <div className="flex flex-row h-120 items-center gap-2 gap-y-12 mx-30">
           <div className="flex w-full flex-col justify-center align-middle gap-5 max-lg:items-center lg:col-span-3 h-full">
             <div className="flex gap-2 items-center">
               <h1 className="z-10 text-4xl leading-[1.29167] font-semibold text-balance max-lg:text-center sm:text-4xl lg:text-5xl">
@@ -25,15 +25,15 @@ export function Education() {
 
             <p className="text-muted-foreground max-w-xl text-xl max-lg:text-center">
               I studied Computer Science at the University of South Carolina
-              from 2021 to 2025. Along with some of the classes I took heres
-              some pictures of me there!
+              from 2021 to 2025. Below are some of the classes I took while
+              pursuing my Bachelor's degree!
             </p>
 
             <div className="flex items-center gap-4">
               <Button
                 asChild
                 size="lg"
-                className="group relative w-fit overflow-hidden rounded-full text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-[position:-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]"
+                className="group relative w-fit overflow-hidden rounded-full text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]"
               >
                 <a href="https://sc.edu">
                   <img src="assets/usc_white_icon.webp" className="size-6" />

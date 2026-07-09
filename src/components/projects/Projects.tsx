@@ -107,7 +107,7 @@ export function Projects() {
               <Button
                 asChild
                 size="lg"
-                className="group relative w-fit overflow-hidden rounded-full text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-[position:-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]"
+                className="group relative w-fit overflow-hidden rounded-full text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]"
               >
                 <a href="https://github.com/andyjDavison">
                   <img
@@ -155,8 +155,8 @@ export function Projects() {
               loop: true,
             }}
           >
-            <div className="from-background pointer-events-none absolute inset-y-0 left-0 z-1 w-25 bg-gradient-to-r via-85% to-transparent" />
-            <div className="from-background pointer-events-none absolute inset-y-0 right-0 z-1 w-25 bg-gradient-to-l via-85% to-transparent" />
+            <div className="from-background pointer-events-none absolute inset-y-0 left-0 z-1 w-25 bg-linear-to-r via-85% to-transparent" />
+            <div className="from-background pointer-events-none absolute inset-y-0 right-0 z-1 w-25 bg-linear-to-l via-85% to-transparent" />
             <CarouselContent className="my-1 flex">
               {projectData.map((item, index) => (
                 <CarouselItem
@@ -211,7 +211,7 @@ export function Projects() {
                   />
                   <Separator
                     orientation="vertical"
-                    className="bg-primary hidden !h-10 !w-0.5 !rounded-full sm:block mt-4"
+                    className="bg-primary hidden h-10! w-0.5! rounded-full! sm:block mt-4"
                   />
                   <div className="flex flex-col">
                     <p className="text-card-foreground text-lg font-bold">
