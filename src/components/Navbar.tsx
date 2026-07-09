@@ -19,8 +19,8 @@ import { AboutDropdown } from "./about/AboutDropdown";
 
 export function Navbar() {
   return (
-    <NavigationMenu className="sticky top-0 z-40 bg-white border rounded-3xl">
-      <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+    <div className="flex justify-center sticky top-1 z-40 bg-white border rounded-3xl mx-12">
+      <div className="h-14 flex justify-between items-center w-full mx-2">
         <NavigationMenuItem className="font-bold flex">
           <Link to="/" className="ml-2 font-bold text-xl flex">
             <SwordIcon />
@@ -60,7 +60,7 @@ export function Navbar() {
             </HoverCardContent>
           </HoverCard>
         </div>
-      </NavigationMenuList>
-    </NavigationMenu>
+      </div>
+    </div>
   );
 }
