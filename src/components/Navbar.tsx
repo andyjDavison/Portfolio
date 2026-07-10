@@ -1,6 +1,5 @@
 import {
   Briefcase,
-  ChevronDown,
   GraduationCapIcon,
   LayoutDashboard,
   SwordIcon,
@@ -8,10 +7,6 @@ import {
 import { Button } from "./ui/button";
 import { NavigationMenuItem } from "./ui/navigation-menu";
 import { Link } from "react-router";
-import { Avatar, AvatarImage } from "./ui/avatar";
-import avatar from "../assets/img_1.jpg";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
-import { AboutDropdown } from "./about/AboutDropdown";
 
 export function Navbar() {
   return (
@@ -46,22 +41,6 @@ export function Navbar() {
             </Button>
           </Link>
         </nav>
-
-        <div className="hidden md:flex gap-2">
-          <HoverCard openDelay={10} closeDelay={100}>
-            <HoverCardTrigger asChild>
-              <Avatar
-                size="lg"
-                className="hover:cursor-pointer border-white border-2"
-              >
-                <AvatarImage src={avatar} />
-              </Avatar>
-            </HoverCardTrigger>
-            <HoverCardContent className="flex w-50 flex-col gap-0.5">
-              <AboutDropdown />
-            </HoverCardContent>
-          </HoverCard>
-        </div>
       </div>
     </div>
   );
