@@ -15,7 +15,7 @@ export function Navbar() {
         <NavigationMenuItem className="font-bold flex">
           <Link
             to="/"
-            className="ml-2 font-bold text-xl flex text-white items-center"
+            className="ml-2 font-bold text-xl flex text-white items-center gap-2"
           >
             <SwordIcon className="text-md" />
             Andrew Davison
