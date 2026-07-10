@@ -12,8 +12,8 @@ const styles = {
 export function Home() {
   return (
     <section className="flex-1 h-full flex justify-center">
-      <div className="flex h-full max-w-7xl flex-col gap-6">
-        <div className="flex flex-row h-110 items-center gap-2 gap-y-12 mx-20">
+      <div className="flex h-full max-w-7xl flex-row gap-6 items-center">
+        <div className="flex flex-col h-110 items-center gap-2 gap-y-12 mx-20">
           <div className="flex w-full flex-col justify-center align-middle gap-5 max-lg:items-center lg:col-span-3 h-full">
             <div className="flex gap-2 items-center">
               <h1 className="z-10 text-4xl leading-[1.29167] font-semibold text-balance max-lg:text-center sm:text-4xl lg:text-5xl">
@@ -26,49 +26,49 @@ export function Home() {
               cool things I do!
             </p>
           </div>
-          <Gallery />
+          <div className="relative flex items-start justify-start gap-6">
+            <Link to="/work">
+              <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-80 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:transition-[background-position_0s_ease] before:duration-1000">
+                <div className="flex flex-col justify-between h-full">
+                  <div className="flex flex-row gap-2">
+                    <Briefcase className="size-6" />
+                    <span className="text-xl">Work</span>
+                  </div>
+                  <span className="text-xs text-wrap">
+                    Checkout what I currently do for work!
+                  </span>
+                </div>
+              </Button>
+            </Link>
+            <Link to="/projects">
+              <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-80 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:transition-[background-position_0s_ease] before:duration-1000">
+                <div className="flex flex-col justify-between h-full">
+                  <div className="flex flex-row gap-2">
+                    <LayoutDashboard className="size-6" />
+                    <span className="text-xl">Projects</span>
+                  </div>
+                  <span className="text-xs text-wrap">
+                    Checkout some cool projects I've made!
+                  </span>
+                </div>
+              </Button>
+            </Link>
+            <Link to="/education">
+              <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-80 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:transition-[background-position_0s_ease] before:duration-1000">
+                <div className="flex flex-col justify-between h-full">
+                  <div className="flex flex-row gap-2">
+                    <GraduationCapIcon className="size-6" />
+                    <span className="text-xl">Education</span>
+                  </div>
+                  <span className="text-xs text-wrap">
+                    Checkout some of the classes I took in school!
+                  </span>
+                </div>
+              </Button>
+            </Link>
+          </div>
         </div>
-        <div className="relative flex items-start justify-start -mt-33 gap-6">
-          <Link to="/work">
-            <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-85 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]">
-              <div className="flex flex-col justify-between h-full">
-                <div className="flex flex-row gap-2">
-                  <Briefcase className="size-6" />
-                  <span className="text-xl">Work</span>
-                </div>
-                <span className="text-xs text-wrap">
-                  Checkout what I currently do for work!
-                </span>
-              </div>
-            </Button>
-          </Link>
-          <Link to="/projects">
-            <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-85 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]">
-              <div className="flex flex-col justify-between h-full">
-                <div className="flex flex-row gap-2">
-                  <LayoutDashboard className="size-6" />
-                  <span className="text-xl">Projects</span>
-                </div>
-                <span className="text-xs text-wrap">
-                  Checkout some cool projects I've made!
-                </span>
-              </div>
-            </Button>
-          </Link>
-          <Link to="/education">
-            <Button className="flex gap-2 py-4 items-start justify-start group relative hover:scale-105 w-45 h-85 overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]">
-              <div className="flex flex-col justify-between h-full">
-                <div className="flex flex-row gap-2">
-                  <GraduationCapIcon className="size-6" />
-                  <span className="text-xl">Education</span>
-                </div>
-                <span className="text-xs text-wrap">
-                  Checkout some of the classes I took in school!
-                </span>
-              </div>
-            </Button>
-          </Link>
-        </div>
+        <Gallery />
       </div>
     </section>
   );

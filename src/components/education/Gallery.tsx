@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export function Gallery() {
   return (
-    <div className="max-h-150 max-w-140 grid gap-6 md:grid-cols-2 mt-50">
+    <div className="max-h-200 max-w-140 grid gap-6 md:grid-cols-2">
       {gallerySections.map((section, sectionIndex) => (
         <div
           key={sectionIndex}

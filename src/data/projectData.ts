@@ -24,6 +24,22 @@ const projectData = [
     socialImgSource: "assets/Leetcode.webp",
   },
   {
+    imgSource: "",
+    header: "Congressional Trades Tracker",
+    desc: "A webapp that tracks and displays congressional trades.",
+    github: "https://github.com/andyjDavison/congress-trade-tracker",
+    link: "congress-trade-tracker",
+    socialImgSource: "",
+  },
+  {
+    imgSource: "",
+    header: "PDF Chat Bot",
+    desc: "A POC webapp to upload PDFs and ask a chat bot to analyze and answer questions about it.",
+    github: "https://github.com/andyjDavison/Leetcode",
+    link: "pdf-chat-bot",
+    socialImgSource: "",
+  },
+  {
     imgSource: "assets/neovim.png",
     header: "NeoVim",
     desc: "A fully functional NeoVim IDE configured and written in Lua",

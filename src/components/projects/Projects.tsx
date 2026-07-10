@@ -1,11 +1,7 @@
 import { useEffect, useState, useRef, useCallback } from "react";
-
 import { ArrowRightIcon } from "lucide-react";
-
 import Autoplay from "embla-carousel-autoplay";
-
 import { Separator } from "@/components/ui/separator";
-
 import { Button } from "@/components/ui/button";
 import {
   type CarouselApi,
@@ -15,7 +11,6 @@ import {
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
 import projectData from "@/data/projectData";
-import { Link } from "react-router";
 
 export type MenuData = {
   id: number;

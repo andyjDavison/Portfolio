@@ -6,11 +6,7 @@ import {
   SwordIcon,
 } from "lucide-react";
 import { Button } from "./ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "./ui/navigation-menu";
+import { NavigationMenuItem } from "./ui/navigation-menu";
 import { Link } from "react-router";
 import { Avatar, AvatarImage } from "./ui/avatar";
 import avatar from "../assets/img_1.jpg";
@@ -19,28 +15,31 @@ import { AboutDropdown } from "./about/AboutDropdown";
 
 export function Navbar() {
   return (
-    <div className="flex justify-center sticky top-1 z-40 bg-white border rounded-3xl mx-12">
+    <div className="flex justify-center sticky top-1 z-40 bg-black border rounded-3xl mx-12">
       <div className="h-14 flex justify-between items-center w-full mx-2">
         <NavigationMenuItem className="font-bold flex">
-          <Link to="/" className="ml-2 font-bold text-xl flex">
-            <SwordIcon />
+          <Link
+            to="/"
+            className="ml-2 font-bold text-xl flex text-white items-center"
+          >
+            <SwordIcon className="text-md" />
             Andrew Davison
           </Link>
         </NavigationMenuItem>
         <nav className="hidden md:flex gap-2">
-          <Link to="/work">
+          <Link to="/work" className="text-white">
             <Button variant="ghost" className="text-md">
               <Briefcase />
               Work
             </Button>
           </Link>
-          <Link to="/projects">
+          <Link to="/projects" className="text-white">
             <Button variant="ghost" className="text-md">
               <LayoutDashboard />
               Projects
             </Button>
           </Link>
-          <Link to="/education">
+          <Link to="/education" className="text-white">
             <Button variant="ghost" className="text-md">
               <GraduationCapIcon />
               Education
@@ -51,7 +50,10 @@ export function Navbar() {
         <div className="hidden md:flex gap-2">
           <HoverCard openDelay={10} closeDelay={100}>
             <HoverCardTrigger asChild>
-              <Avatar size="lg" className="hover:cursor-pointer">
+              <Avatar
+                size="lg"
+                className="hover:cursor-pointer border-white border-2"
+              >
                 <AvatarImage src={avatar} />
               </Avatar>
             </HoverCardTrigger>
