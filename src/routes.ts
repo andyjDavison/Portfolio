@@ -9,9 +9,11 @@ import { Work } from "./components/work/WorkPage";
 export const router = createBrowserRouter([
   {
     path: "/",
+    Component: Home,
+  },
+  {
     Component: RootLayout,
     children: [
-      { index: true, Component: Home },
       { path: "about", Component: About },
       {
         path: "projects",
