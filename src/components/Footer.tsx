@@ -33,7 +33,7 @@ export function Footer() {
           >
             <img
               src={"assets/email-icon.png"}
-              className="obeh size-6 object-contain"
+              className="obeh size-8 object-contain"
             />
           </a>
           <a
