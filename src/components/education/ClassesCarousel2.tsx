@@ -42,18 +42,18 @@ export function ClassesCarouel2() {
         {classes2.map((item) => (
           <CarouselItem
             key={item.name}
-            className={`flex items-center justify-center hover:cursor-pointer basis-1/3`}
+            className={`flex items-center justify-center hover:cursor-pointer basis-48/100 lg:basis-1/3`}
           >
             <span
-              className={`flex flex-col ${colors[item.color as keyof typeof colors]} w-125 rounded-4xl border-2 justify-center px-2 py-0.5`}
+              className={`flex flex-col ${colors[item.color as keyof typeof colors]} w-44 lg:w-125 rounded-4xl border-2 justify-center lg:px-2 lg:py-0.5`}
             >
               <p
-                className={`${item.color === "black" ? "text-white" : ""} text-sm px-5 font-semibold`}
+                className={`${item.color === "black" ? "text-white" : ""} text-[10px] lg:text-sm px-5 font-semibold`}
               >
                 {item.name}
               </p>
               <p
-                className={`${item.color === "black" ? "text-white" : ""} text-xs px-5 whitespace-nowrap`}
+                className={`${item.color === "black" ? "text-white" : ""} text-[8px] lg:text-xs px-5 whitespace-nowrap`}
               >
                 {item.desc}
               </p>

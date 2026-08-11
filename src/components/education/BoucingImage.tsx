@@ -100,13 +100,13 @@ export function BouncingImage() {
     <div
       ref={containerRef}
       onMouseMove={handleMouseMove}
-      className="relative w-full h-[490px] overflow-hidden rounded-xl"
+      className="relative w-full h-4/5 overflow-hidden rounded-xl"
     >
       <img
         ref={imageRef}
         src="assets/university_img.png"
         alt="Bouncer"
-        className="absolute w-40 h-40 object-contain pointer-events-none select-none"
+        className="absolute size-20 lg:size-50 object-contain pointer-events-none select-none"
         style={{
           transform: `translate(${pos.x}px, ${pos.y}px)`,
           // Removed transition for frame-perfect clamping

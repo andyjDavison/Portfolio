@@ -88,8 +88,8 @@ export function Projects() {
     <section className="flex-1 flex justify-between">
       <div className="flex h-full max-w-screen flex-col">
         <div className="flex flex-row h-full items-center gap-y-12">
-          <div className="flex flex-col w-full items-center justify-center align-middle gap-2 lg:gap-5 max-lg:items-center lg:col-span-3 h-full">
-            <h1 className="text-2xl leading-[1.29167] font-bold text-balance lg:text-5xl">
+          <div className="flex flex-col w-full h-full items-center justify-center align-middle gap-2 lg:gap-5 max-lg:items-center lg:col-span-3">
+            <h1 className="text-2xl lg:text-5xl leading-[1.29167] font-bold text-balance ">
               Projects
             </h1>
 
@@ -100,7 +100,7 @@ export function Projects() {
 
             <Button
               asChild
-              className="flex items-centergroup relative lg:hover:scale-105 w-1/2 lg:w-fit h-7 lg:h-10 overflow-hidden rounded-full text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] lg:has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]"
+              className="flex items-center group relative lg:hover:scale-105 w-1/2 lg:w-fit h-7 lg:h-10 overflow-hidden rounded-full text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] lg:has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]"
             >
               <a
                 href="https://github.com/andyjDavison"
