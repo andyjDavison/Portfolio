@@ -11,7 +11,7 @@ export const viewport = {
 export function RootLayout() {
   return (
     <div className="w-screen h-screen flex flex-col justify-center">
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex flex-1 justify-center">
         <Outlet />
       </main>
