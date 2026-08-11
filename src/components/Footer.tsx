@@ -1,8 +1,8 @@
 export function Footer() {
   return (
-    <div className="flex justify-center sticky bottom-2 z-40 pt-15">
+    <div className="flex justify-center sticky bottom-2 z-40 pt-0 lg:pt-15">
       <div className="flex flex-col items-center">
-        <div className="flex gap-4">
+        <div className="flex gap-2 lg:gap-4">
           <a
             href="https://www.linkedin.com/in/davison-andrewj/"
             target="_blank"
@@ -11,7 +11,7 @@ export function Footer() {
           >
             <img
               src={"assets/linkedin-icon.png"}
-              className="obeh size-7 object-contain"
+              className="obeh size-5 lg:size-7 object-contain"
             />
           </a>
           <a
@@ -22,7 +22,7 @@ export function Footer() {
           >
             <img
               src={"assets/github-icon.svg"}
-              className="obeh size-6 object-contain"
+              className="obeh size-5 lg:size-6 object-contain"
             />
           </a>
           <a
@@ -33,7 +33,7 @@ export function Footer() {
           >
             <img
               src={"assets/email-icon.png"}
-              className="obeh size-8 object-contain"
+              className="obeh size-7 lg:size-8 object-contain"
             />
           </a>
           <a
@@ -44,11 +44,11 @@ export function Footer() {
           >
             <img
               src={"assets/instagram-icon.webp"}
-              className="obeh size-6 object-contain"
+              className="obeh size-5 lg:size-6 object-contain"
             />
           </a>
         </div>
-        <h6 className="text-xs font-semibold">
+        <h6 className="text-[8px] lg:text-xs font-semibold">
           Copyright © 2026 Andrew Davison
         </h6>
       </div>
