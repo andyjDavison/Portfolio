@@ -10,7 +10,7 @@ export function Home() {
           <p className="z-10 text-2xl leading-[1.29167] font-bold text-balance max-lg:text-center sm:text-xl lg:text-2xl">
             Software Engineer & Consultant
           </p>
-          <h1 className="z-10 text-4xl leading-[1.29167] font-semibold text-balance max-lg:text-center sm:text-4xl lg:text-5xl">
+          <h1 className="z-10 text-4xl leading-[1.29167] font-bold text-balance max-lg:text-center sm:text-4xl lg:text-5xl">
             Andrew Davison's Portfolio
           </h1>
         </div>
