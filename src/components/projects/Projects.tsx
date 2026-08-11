@@ -86,14 +86,14 @@ export function Projects() {
 
   return (
     <section className="flex-1 flex justify-between">
-      <div className="flex h-full max-w-screen flex-col gap-6">
-        <div className="flex flex-row h-1/2 items-center gap-y-12">
+      <div className="flex h-full max-w-screen flex-col">
+        <div className="flex flex-row h-full items-center gap-y-12">
           <div className="flex flex-col w-full items-center justify-center align-middle gap-2 lg:gap-5 max-lg:items-center lg:col-span-3 h-full">
             <h1 className="text-2xl leading-[1.29167] font-bold text-balance lg:text-5xl">
               Projects
             </h1>
 
-            <p className="text-center text-muted-foreground max-w-xl text-xs lg:text-xl">
+            <p className="text-center text-muted-foreground max-w-xl text-[10px] lg:text-xl">
               My collection of Software/Cyber Security/Data Science projects.
               All source code and information can be found on my github!
             </p>
@@ -140,9 +140,9 @@ export function Projects() {
         </div>
 
         <div className="flex items-center h-full">
-          <div className="grid grid-cols-1 lg:gap-24 lg:gap-y-12 lg:grid-cols-5">
+          <div className="grid grid-cols-1 lg:gap-24 lg:gap-y-12 lg:grid-cols-5 h-full">
             <Carousel
-              className="relative w-full max-lg:order-2 lg:col-span-3"
+              className="flex lg:items-center relative w-full max-lg:order-2 lg:col-span-3"
               setApi={setThumbApi}
               opts={{
                 loop: true,
@@ -192,7 +192,7 @@ export function Projects() {
                 loop: true,
               }}
             >
-              <CarouselContent className="ml-0">
+              <CarouselContent className="flex lg:items-center ml-0">
                 {projectData.map((item) => (
                   <CarouselItem
                     key={item.desc}
