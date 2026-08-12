@@ -87,7 +87,7 @@ export function Projects() {
   return (
     <section className="flex-1 flex justify-between">
       <div className="flex h-full max-w-screen flex-col">
-        <div className="flex flex-row h-full items-center gap-y-12">
+        <div className="flex flex-row h-3/5 lg:h-3/4 items-center gap-y-12">
           <div className="flex flex-col w-full h-full items-center justify-center align-middle gap-2 lg:gap-5 max-lg:items-center lg:col-span-3">
             <h1 className="text-2xl lg:text-5xl leading-[1.29167] font-bold text-balance ">
               Projects
@@ -139,7 +139,7 @@ export function Projects() {
           </Carousel>
         </div>
 
-        <div className="flex items-center h-full">
+        <div className="flex items-center">
           <div className="grid grid-cols-1 lg:gap-24 lg:gap-y-12 lg:grid-cols-5 h-full">
             <Carousel
               className="flex lg:items-center relative w-full max-lg:order-2 lg:col-span-3"
@@ -159,7 +159,7 @@ export function Projects() {
                     )}
                     onClick={() => handleThumbClick(index)}
                   >
-                    <div className="relative flex h-33 items-center justify-center">
+                    <div className="relative flex h-27 items-center justify-center">
                       <div
                         className={cn(
                           "absolute bottom-0 -z-1",
