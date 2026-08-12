@@ -4,8 +4,8 @@ import {
   LayoutDashboard,
   SwordIcon,
 } from "lucide-react";
-import { Button } from "./ui/button";
-import { NavigationMenuItem } from "./ui/navigation-menu";
+import { Button } from "../ui/button";
+import { NavigationMenuItem } from "../ui/navigation-menu";
 import { Link } from "react-router";
 
 export function Navbar() {

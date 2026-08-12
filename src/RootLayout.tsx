@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import { Navbar } from "./components/Navbar";
 import Footer from "./components/Footer";
+import NavbarWrapper from "./components/navbar/NavbarWrapper";
 
 export const viewport = {
   width: "device-width",
@@ -11,7 +11,7 @@ export const viewport = {
 export function RootLayout() {
   return (
     <div className="w-screen h-screen flex flex-col justify-center">
-      {/* <Navbar /> */}
+      <NavbarWrapper />
       <main className="flex flex-1 justify-center">
         <Outlet />
       </main>
