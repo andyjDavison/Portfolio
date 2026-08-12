@@ -48,7 +48,11 @@ export default function MobileNavbar() {
           }`}
         >
           <div className="flex flex-col gap-2 pt-24">
-            <Link to="/work" className="text-white">
+            <Link
+              to="/work"
+              className="text-white"
+              onClick={() => setIsOpen(false)}
+            >
               <Button
                 variant="ghost"
                 className="w-full justify-start pl-4 text-md"
@@ -57,7 +61,11 @@ export default function MobileNavbar() {
                 Work
               </Button>
             </Link>
-            <Link to="/projects" className="text-white">
+            <Link
+              to="/projects"
+              className="text-white"
+              onClick={() => setIsOpen(false)}
+            >
               <Button
                 variant="ghost"
                 className="w-full justify-start pl-4 text-md"
@@ -66,7 +74,11 @@ export default function MobileNavbar() {
                 Projects
               </Button>
             </Link>
-            <Link to="/education" className="text-white">
+            <Link
+              to="/education"
+              className="text-white"
+              onClick={() => setIsOpen(false)}
+            >
               <Button
                 variant="ghost"
                 className="w-full justify-start pl-4 text-md"
